@@ -1,0 +1,575 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+/* navbar-section */
+/* .container-fluid {
+    
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--add);
+    color: var(--light-gray);
+} */
+body{
+    overflow-x:hidden;
+    background-color: var(--mac);
+    position: relative;
+}
+
+.header-1{
+    
+    width: 100vw;
+    height:10vh;
+    background-color: var(  --secondary);
+    /* border-radius: 10px; */
+}
+#LUN{
+   width: 3em;
+   height: 2rem;
+   border: none;
+   font-size: 1rem;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+.header span label{
+    color: white;
+    text-transform: uppercase;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+            /* header */
+
+    .navbar{
+        position: sticky;
+        top: 0px;
+        left: 0px;
+
+     }       
+
+     .navbar-section{
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around ;
+    align-items: center;
+    /* padding: 1rem; */
+    background-color: var(--light);
+
+}
+.navbar-section  img{
+    width: auto;
+    height: 10vh;
+}
+
+.navbar-section ul{
+   
+    display: flex;
+    list-style-type: none;
+}
+.navbar-section ul li a{
+    display: inline-block;
+    color: var(--dark);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    
+
+}
+.navbar-section ul li a:hover{
+    cursor: pointer;
+    color: var(--warning);
+    text-decoration: underline;
+}
+.social-links a{
+    font-size: 1rem;
+    color: var(--light);
+    text-decoration: none;
+ 
+    border-radius: 50%;
+    padding: 0.4rem 0rem 0.3rem 0.6rem;
+ 
+    background-color: var(--dark);
+    text-align: center;
+   
+}
+
+.first-social-links:hover i{
+       
+    animation-name: myIcon;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    transform-origin: 50% 0;
+
+}
+@keyframes myIcon{
+    0%{transform: rotateY(0deg)}
+    10%{transform: rotateY(-80deg)}
+    20%{transform: rotateY(120deg)}
+    
+    
+}
+.social-links a :hover{
+    cursor: pointer;
+    color: var(--warning);
+    
+}
+
+/* navbar-section */
+
+/* title and icon */
+
+.first-container{
+    display: flex;
+    width: 100vw;
+    height: 25vh;
+    /* border: 2px solid red; */
+
+}
+.first-con-h1{
+   
+    width: 25vw;
+    height: 25vh;
+    /* border: 2px solid red; */
+   
+}
+.first-con-h1 ,h1{
+    padding: 1rem;
+    color: var(--dark);
+}
+
+.first-con-h1-link{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+.first-con-h1-link a{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--dark);
+
+}
+.first-con-h1-link a:hover{
+    color: var(--danger);
+    text-decoration: underline;
+}
+
+.icons-collection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    height: 25vh;
+   
+
+}
+.first-container span{
+    font-size: 2rem;
+    background-color: var(--light);
+    padding: 0.5rem;
+    border: 2px solid var(--co);
+    border-radius: 50%;
+    color: var(--dark);
+}
+.line{
+    display: inline;
+    width: 5%;
+    height: 1vh;
+    background-color: var(--dark);
+}
+.p-icon{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--dark);
+   
+}
+
+/* title and icon */
+
+
+        /* main part */
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    height: 120vh;
+    position: relative;
+    left: 5rem;
+    /* border: 2px solid red; */
+    padding: 2rem 1rem;
+    background-color: var(---ex-light-gray);
+} 
+
+.left-section{
+    width: 46vw;
+    height: 100vh;
+    /* border: 2px solid green; */
+    background-color: var(--light);
+  
+ 
+}   
+                /* direction selection   part */
+.direction{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 46vw;
+    height: 18vh;
+}
+select{
+    width: 20vw;
+    height: 13vh;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--dark);
+    border: 2px solid var(--co);
+}
+.from{
+    position: absolute;;
+    color: var( --secondary);
+    left:  5rem;
+    top: 2rem;
+    font-weight: bold;
+}
+.to{
+    position: absolute;
+    color: var( --secondary);
+    left:  22rem;
+    top: 2rem;
+    font-weight: bold;
+}
+.pra1{
+ color: var(--danger);
+ padding-left: 2rem;
+}  
+
+     /* date-time selection */
+.date-time{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 42vw;
+    height: 10vh;
+    border: 2px solid var(--co);
+    margin: 3rem 1.5rem;
+    padding: 2rem 0rem;
+
+}
+.defarture-date{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+.defarture-date input{
+    border: none;
+}
+.date-title{
+    color: var(--dark);
+}
+.victor{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary);
+}
+.return-date
+{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+.return-date input{
+    border: none;
+}
+.check{
+    width: 4vw; 
+    height: 4vh;
+    font-size: 3rem;
+    color: var(--secondary);
+}
+.left-section button{
+   width: 25vw;
+   height: 10vh;
+   font-size: 1rem;
+   font-weight: bold;
+   color: var(--light);
+   background-color: var(--danger);
+   position:relative;
+   left:  13rem;
+   top: 3rem;
+}
+                /* person selection part */
+
+.person-selection{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0rem 1rem 2rem;
+}
+.person-selection-input{
+    width: 8vw;
+    height: 6vh;
+    font-size: 2rem;
+    font-weight: bold;
+    margin:1rem 0rem 0rem 0rem;
+    border: 2px solid var(--co);
+    border-radius: 10px;
+}
+.person-selection-span{
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+
+
+
+
+/*  aside part  */
+
+.right-section{
+    width: 30VW;
+    height: 100vh;
+    /* border: 2px solid red; */
+    background-color: var(--light);
+
+}
+.head1{
+    color: var(--black);
+    font-size: 2rem;
+    padding: 2rem 0rem 0rem 2rem;
+}
+.list{
+    list-style-position: outside;
+    color: var(--black);
+    padding: 2rem;
+   
+}
+.right-section li{
+    margin-top:2rem;
+}
+.button{
+    font-size: 1rem;
+    font-weight: bold;
+    width: 25vw;
+    height: 10vh;
+    color: var(--light);
+    background-color: var(--secondary);
+    margin: 2rem 0rem 2rem 1rem ;
+
+}
+
+
+
+                /* main part */
+
+    /* booging form part */
+
+     .booking{
+        width: 90vw;
+        height: 95vh;
+        border: 2px solid gray;
+        margin: 0px auto;
+        background-color: var(--light);
+    
+     }
+     #hidden{
+         /* display: none; */
+     }
+
+    .booking-form{
+        display: grid;
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 10vh 10vh 10vh 10vh;
+        gap: 1rem;
+        justify-content: space-around;
+        padding-top: 2rem;
+        /* align-items: center; */
+
+    }
+
+    /* booging form part */
+
+
+
+  /* footer */
+       footer{
+        width: 100vw;
+        height: 80vh;
+        background-color: rgb(3, 78, 163);
+    }
+    .all-footer-information{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .all-footer-information h5{
+        color:var(--light);
+        margin: 0.2rem;
+    }
+    .all-footer-information p{
+        color: white;
+        font-size: 10px;
+    }
+    .all-footer-information a{
+        color: rgb(131, 173, 207);
+        text-decoration: none;
+        margin: 1rem;
+    }
+    .all-footer-information a:hover{
+        color: var(--warning);
+        font-size: 1.01em;
+    }
+    .all-footer-information button{
+        background-color: var(--danger);
+        width: 15vw;
+        height: 8vh;
+        border: none;
+        outline: none;
+        color: white;
+    }
+    .all-footer-information span a i{
+        color: white;
+        font-size: 2rem;
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 0.5rem;
+        margin: 0.2rem;
+    }
+
+
+    @media screen and (max-width:480px){
+        .navbar-section{
+            height: 15vh;
+        }
+        .navbar-section img{
+            width: auto;
+            height: 3vh;
+           }
+
+           
+.first-container{
+    display: flex;
+    width: 100%;
+    height: 25vh;
+
+
+}
+ .first-con-h1{
+   
+    width: 35%;
+    height: 25vh;
+   
+}
+.icons-collection i{
+    font-size: 1em;
+}
+.container{
+    width: 100%;
+    position: relative;
+    left: 0px;
+}
+.left-section .direction select{
+    width: 3em;
+    height: 2em;
+}
+.date-time{
+
+}
+.date-time{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;   
+     width: 100%;
+     height: 20vh;
+    margin: 2em 0px;
+    text-align: center
+
+
+    border: 2px solid var(--co);
+    /* margin: 3rem 1.5rem; */
+    padding: 2rem 0rem;
+
+}
+.date-time span{
+    font-size: 1em;
+    margin-bottom: 0.5em,
+    padding: 1rem 0rem 1rem 0rem;
+}
+.person-selection{
+    width: 100%;
+    padding: 1rem 0rem 1rem 0rem;
+}
+.person-selection .person-selection-span{
+    font-size: 12px
+}
+.person-selection input{
+    width: 10vw;
+    height: 4vh;
+    margin: 0.1em;
+    padding: 1rem 0rem 1rem 0rem;
+}
+.left-section button{
+    width: 38vw;
+    height: 8vh;
+    position:relative;
+    left:  1rem;
+    top: 3rem;
+ }
+
+ .right-section .list{
+     padding: 0.3em;
+     list-style-position: inside;
+ }
+ .right-section .head1{
+     font-size: 1em
+ }
+ .right-section .list li{
+     font-size: 12px;
+
+ }
+    }
+    
+    @media screen and (max-width:480px){
+        .footer-section{
+            display: flex;
+            padding: 1em;
+            width: auto;
+            height:auto ;
+            position: absolute;
+            top: 105rem;
+        }
+        .all-footer-information #btn{
+         
+            font-size: 10px;
+            width: 8em;
+            height: 4vh;
+        }
+        .all-footer-information a{
+            font-size:12px;
+        }
+    .all-footer-information{
+            display: flex;
+            width: 100%;
+           
+            flex-wrap: wrap;
+        }
+        .all-footer-information button{
+            font-size: 1em;
+            width: 30vw;
+        }
+    
+    
+    }
+
+    
+
+       /* footer */

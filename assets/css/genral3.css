@@ -1,0 +1,19 @@
+:root{
+    --danger:#eb2f06;
+    --warning:#fed330;
+    --secondary:#0652DD;
+    --darkD: #182c61;
+    --light:#ffffff;
+    --ex-light-gray: #dfe4ea;
+    --mac:#c8d6e5;
+    --min:#54a0ff;
+    --nice:#30336b;
+    --add:#3742fa;
+    --co:#57606f;
+    --pic:#a3dff9
+}
+body{
+     font-family: 'DM Sans', sans-serif;
+     font-family: 'DM Sans', sans-serif;
+     font-family: 'Heebo', sans-serif;
+}

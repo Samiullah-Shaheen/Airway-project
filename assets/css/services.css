@@ -1,0 +1,703 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+
+.caontainer-first{
+    width: 100%;
+    height: auto;
+    
+}
+.header-1{
+    
+    width: inherit;
+    height:10vh;
+    background-color: var(  --secondary);
+}
+#LUN{
+    display: inline-block;
+   width: 3em;
+   height: 2rem;
+   border: none;
+   font-size: 1rem;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+.header span label{
+    color: white;
+    text-transform: uppercase;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+nav{
+   width: 100%;
+   height: 13vh;
+
+   display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around ;
+    align-items: center;
+    /* padding: 1rem; */
+   
+}
+nav img{
+    width: auto;
+    height: 10vh;
+}
+.logo a{
+    text-decoration: none;
+    color: var(--dark);
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul li a{
+    display: inline-block;
+    color: var(--dark);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    
+
+}
+nav ul li a:hover{
+    cursor: pointer;
+    color: var(--warning);
+    text-decoration: underline;
+}
+.social-links a{
+    font-size: 1rem;
+    color: var(--light);
+    text-decoration: none;
+ 
+    border-radius: 50%;
+    padding: 0.4rem 0rem 0.3rem 0.6rem;
+ 
+    background-color: var(--dark);
+    text-align: center;
+   
+}
+.first-social-links:hover i{
+       
+    animation-name: myIcon;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    transform-origin: 50% 0;
+
+}
+@keyframes myIcon{
+    0%{transform: rotateY(0deg)}
+    10%{transform: rotateY(-80deg)}
+    20%{transform: rotateY(120deg)}
+    
+    
+}
+.social-links a :hover{
+    cursor: pointer;
+    color: var(--warning);
+    
+}
+/* slaider */
+.slaider{
+    background-image: url(../img/12.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:scroll;
+    width: 100%;
+    height: 80vh;
+    
+}
+.slaider-content-body{
+    background-color:rgba(30, 55, 153,0.8) ;
+    width: 100%;
+    height: 80vh;
+    display: grid;
+    align-items: center;
+}
+h1{
+    color: var(--light);
+    margin-top: 1rem;
+    padding-left: 5rem;
+}
+
+.slaider-header ul{
+    list-style-type:none;
+    display: flex;
+   justify-content: space-around;
+   width: 35%;
+    margin: 1rem 0rem 0rem  4rem;
+}
+.slaider-header ul li a{
+    color: var(--mac);
+    text-decoration: none;
+
+}
+.slaider-header ul li a:hover{
+cursor: pointer;
+color: var(--warning);
+text-decoration: underline;
+}
+
+/*  aside part  */
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    height: 230vh;
+    position: relative;
+    bottom: 8rem;
+    left: 5rem;
+    padding: 1rem 1rem;
+    margin-bottom: -8rem;
+    background-color: var(--light);
+} 
+
+section{
+    width: 56%;
+    height: 176vh;
+    background-color: var(--mac);
+ 
+}
+.section-img{
+    width: 45vw;
+    height: 45vh;
+    background-image: url(../img/e1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.section .button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 1rem;
+
+
+}
+.section .button #btn1{
+    border: 1px solid red;
+    border-radius:10px;
+    width: 12vw;
+    height: 5vh; 
+    font-family: sans-serif;
+    background-color: var(--co);
+    color: white;
+    border: none;
+    outline: none;
+
+}
+.section .button #btn2{
+    border: 1px solid red;
+    border-radius:10px;
+    width: 12vw;
+    height: 5vh; 
+    font-family: sans-serif;
+    background-color: var(--co);
+    color: white;
+    border: none;
+    outline: none;
+
+}
+.section .button #btn3{
+    border: 1px solid red;
+    border-radius:10px;
+    width: 12vw;
+    height: 5vh; 
+    font-family: sans-serif;
+    background-color: var(--co);
+    color: white;
+    border: none;
+    outline: none;
+}
+@media screen and (max-width:480px){
+    nav img{
+        width: auto;
+        height: 3vh;
+    }
+    
+.section .button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 1rem;
+
+
+}
+.section .button #btn1{
+    border: 1px solid red;
+    border-radius:10px;
+    width: 12vw;
+    height: 5vh; 
+    font-family: sans-serif;
+    background-color: var(--co);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 0.5rem;
+}
+.section .button #btn2{
+    border: 1px solid red;
+    border-radius:10px;
+    width: 12vw;
+    height: 5vh; 
+    font-family: sans-serif;
+    background-color: var(--co);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 0.5rem;
+
+}
+.section .button #btn3{
+    border: 1px solid red;
+    border-radius:10px;
+    width: 12vw;
+    height: 5vh; 
+    font-family: sans-serif;
+    background-color: var(--co);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 0.5rem;
+}
+
+}
+
+.text-social{
+    display: flex;
+    justify-content: space-around;
+}
+.text{
+    display: inline;
+    width: 60%;
+   margin:2rem 3rem 0rem -1rem;
+}
+.section-social-links{
+    margin: 2rem -2rem 1rem 0rem;
+    
+
+}
+.section-social-links a{
+    display: inline;
+    color: var(--dark);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+.section-social-links a :hover{
+    cursor: pointer;
+    color: var(--warning);
+    }
+    .section h3{
+        font-size: 18px;
+        margin: 2rem 0rem 2rem 0rem;
+    }
+    
+    .section ul{
+        width: 100%;
+    } 
+    .section ul li{
+        margin: 1rem;
+        
+    } 
+    .contact-inf{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .spa{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1rem;
+    }
+    .contact-inf a{
+        font-size: 1.5rem;
+        color: var(--dark);
+        padding: 1rem;
+        border: 2px solid var(--mac);
+        border-radius: 50%;
+        text-decoration: none;
+        background-color: var(--mac);
+       
+    }
+    .links:hover i{
+       
+        animation-name: myIcon;
+        animation-duration: 5s;
+        animation-timing-function: ease;
+        animation-direction: alternate;
+        transform-origin: 50% 0;
+
+    }
+    @keyframes myIcon{
+        0%{transform: rotate(30deg)}
+        10%{transform: rotate(-180deg)}
+        25%{transform: rotate(360deg)}
+        
+        
+    }
+    .contact-inf a:hover{
+       background-color: var(--dark);
+        color: var(--light);
+    }
+  
+     .feed{
+        font-size: 20px;
+        margin: 2rem 0rem;
+     }
+
+     table{
+        width: 45vw;
+        height: 20vh;
+        border-collapse: collapse;
+        box-shadow: 2px 2px 2px 0.7px gray;
+
+     }
+
+    td{
+        padding-left: 1rem;
+        width: 30vw;
+     }
+     tr{
+        background-color: var(--pic);
+     }
+
+     tr:nth-child(odd):hover{
+        background-color: var(--co);
+     }
+     tr:nth-child(even){
+        background-color: var(--ex-light-gray);
+     }
+    
+
+
+
+
+/*  aside part  */
+
+.aside{
+    width: 35%;
+    height: 130vh;
+    background-color:var(--secondary);
+}
+
+.icon_relation {
+    font-size: 3rem;
+   text-align: center;
+   
+}
+.icon {
+   
+   position: absolute;
+   left: 26rem;
+   font-size: 1.5rem;
+
+}
+.icon{
+   
+   transition: all 1s ease-in;
+}
+
+.icon i:hover {
+   transform: scale(1.7);
+  
+}
+
+.aside{
+   width: 35%;
+   height: 130vh;
+   background-color:var(--secondary);
+}
+
+.head1{
+   color: var(--light);
+   font-size: 2rem;
+   padding: 2rem 0rem 0rem 2rem;
+}
+.list{
+   list-style-position: outside;
+   color: var(--light);
+   padding: 1rem 2rem 0rem 2rem;
+  
+}
+.aside li{
+   margin-top:1rem;
+}
+button{
+   font-size: 1rem;
+   font-weight: bold;
+   width: 22vw;
+   height: 10vh;
+   color: var(--light);
+   background-color: var(--danger);
+   margin: 3rem 0rem 2rem 1rem ;
+   cursor: pointer;
+
+}
+@media screen and (max-width:480px){
+    .aside{
+        width: 35%;
+        height: 160vh;
+        background-color:var(--secondary);
+     }
+    .head1{
+        color: var(--light);
+        font-size: 1rem;
+        padding: 2rem 0rem 0rem 2rem;
+     }
+     .aside p{
+         font-size: 0.7rem;
+    }
+    .aside ul li{
+        font-size: 0.7rem;
+    }
+}
+
+
+/* information car */
+.information{
+    display: flex;
+    justify-content:space-around;
+    width: 100%;
+    height: 50vh;
+
+  
+}
+
+.information .small-car{
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 300px 300px;
+    text-align: center;
+    grid-gap: 10px 10px;
+    position: relative;
+    top: 30px;
+}
+@media screen and (max-width:480px){
+    .information{
+        display: flex;
+        justify-content:space-around;
+        width: 100%;
+        height: 50vh;
+    
+      
+    }
+  
+    .information .small-car{
+        display: grid;
+        grid-template-columns:190px;
+        text-align: center;
+        position: relative;
+        top: 60px;
+    }
+    .information .small-car .item1{
+        height:30vh;
+        outline: none;
+        border: 1px solid green;
+        background-image: url(../img/fer.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        }
+    .information .small-car p{
+         display: none;
+      }
+
+
+      .information .small-car .item4{
+        display: none;
+        height: 30vh;
+        outline: none;
+        border: 1px solid green;
+        background-image: url(../img/e3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .information .small-car .item5{
+        display: none;
+        height: 30vh;
+        outline: none;
+        border: 1px solid green;
+        background-image: url(../img/e3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .information .small-car .item6{
+        display: none;
+        height: 30vh;
+        outline: none;
+        border: 1px solid green; 
+         background-image: url(../img/e3.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+    }
+}
+.information .small-car .item1{
+    height: 30vh;
+    outline: none;
+    border: 1px solid green;
+    background-image: url(../assets/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.information .small-car .item2{
+    height: 30vh;
+    outline: none;
+    border: 1px solid green;
+    background-image: url(../assets/img/e1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.information .small-car .item3{
+    height: 30vh;
+    outline: none;
+    border: 1px solid green;
+    background-image: url(../assets/img/e2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.information .small-car .item4{
+    height: 30vh;
+    outline: none;
+    border: 1px solid green;
+    background-image: url(../assets/img/e3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.information .small-car .item5{
+    height: 30vh;
+    outline: none;
+    border: 1px solid green;
+    background-image: url(../assets/img/e4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.information .small-car .item6{
+    height: 30vh;
+    outline: none;
+    border: 1px solid green; 
+     background-image: url(../assets/img/e2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.information .small-car .item1 i{
+    color: red;
+    font-size: 30px;
+}
+.information .small-car .item2 i{
+    color: red;
+    font-size: 30px;
+}
+.information .small-car .item3 i{
+    color: red;
+    font-size: 30px;
+}
+.information .small-car .item4 i{
+    color: red;
+    font-size: 30px;
+}
+.information .small-car .item5 i{
+    color: red;
+    font-size: 30px;
+}
+.information .small-car .item6 i{
+    color: red;
+    font-size: 30px;
+}
+.information .small-car div{
+    color:var(--danger);
+}
+
+.information .small-car .item1:hover{
+    border: 2px solid red;
+}
+.information .small-car .item2:hover{
+    border: 2px solid red;
+}
+.information .small-car .item3:hover{
+    border: 2px solid red;
+}
+.information .small-car .item4:hover{
+    border: 2px solid red;
+}
+.information .small-car .item5:hover{
+    border: 2px solid red;
+}
+.information .small-car .item6:hover{
+    border: 2px solid red;
+}
+
+  /* footer */
+       footer{
+        width: 100vw;
+        height: 80vh;
+        background-color: rgb(3, 78, 163);
+    }
+    @media screen and (max-width:480px){
+        footer{
+            width: 100%;
+            height: 80vh;
+            background-color: rgb(3, 78, 163);
+            position: absolute;
+            top: 2300px;
+        }
+        .all-footer-information #btn{
+            width: 25vw;
+            height: 5vh;
+        }
+    }
+    .all-footer-information{
+        position: relative;
+        top: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .all-footer-information h5{
+        color: white;
+    }
+    .all-footer-information p{
+        color: white;
+        font-size: 10px;
+    }
+    .all-footer-information a{
+        color: rgb(131, 173, 207);
+        text-decoration: none;
+    }
+    .all-footer-information a:hover{
+        color: var(--warning);
+        font-size: 1.01em;
+    }
+    .all-footer-information button{
+        background-color: red;
+        width: 180px;
+        height: 30px;
+        position: relative;
+        left: 40px;
+        border: none;
+        outline: none;
+        color: white;
+    }
+    .all-footer-information span a i{
+        color: white;
+        font-size: 20px;
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 0.5rem;
+        margin: 0.2rem;
+    }
+    
+
+       /* footer */

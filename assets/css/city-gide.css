@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Heebo:wght@100;400;500;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-container-for-body-to-removescroll{
+    width: 100%;
+    height: auto;
+}
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+/* header section is started */
+.header-1{
+    position: sticky;
+    top: 0;
+    left: 2px;
+    opacity: 1;
+    
+    width: inherit;
+    height:10vh;
+    background-color: var(  --secondary);
+   
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+
+.header span label{
+    color: white;
+    text-transform: uppercase;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+@media screen and (max-width: 480px){
+    .header-1 {
+        height: 5vh;
+    } 
+}
+
+/* navbar section is started */
+nav{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 1rem; */
+    color: var(--dark);
+    height: 4rem;
+}
+/* logo */
+nav img{
+    width: auto;
+    height: 10vh;
+   }
+@media screen and (max-width: 480px)
+{
+    nav img{
+        width: auto;
+        height: 3vh;
+       }
+    .logo img{
+        width: 5vw;
+        height: 4vh;
+    }
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li a{
+    display: inline-block;
+    color: var(--dark);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+nav ul li a:hover{
+    cursor: pointer;
+    color: var(--warning);
+    text-decoration: underline;
+}
+/* slider class */
+.slider{
+
+    background-image: url(../img/khanaaaa.jpeg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: inherit;
+    height: 70vh;
+
+}
+.slider-content-body{
+    background-color: rgba(30, 55,153, 0.7);
+    width: inherit;
+    height: 70vh;
+    display: grid;
+    align-items: center;
+}
+h1{
+    color: var(--light);
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+
+}
+
+.slider-hader{
+   
+    position: absolute;
+    left: 15rem;
+    bottom: 17em;
+}
+@media screen and (max-width:480px) {
+    .slider-hader{
+        position: absolute;
+        left: 5rem;
+        bottom: 35em;
+    }
+    .slider-hader ul li a{
+        margin-right: 0.5em;
+        
+    }
+    
+}
+
+
+.slider-hader ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+
+}
+.slider-hader ul li a{
+    color: var(--mac);
+    text-decoration: none;
+    margin-right: 1em;
+    
+
+}
+.slider-hader ul li a:hover{
+    color: var(--warning);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.container-2{
+    display: flex;
+    justify-content: space-around;
+    width: 85vw;
+    height: 200vh;
+}
+/* main contanier started */
+.main{
+   
+    width: 75vw;
+    height: 150vh;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left: 8rem;
+    top: 20em;
+    background-color: var( --light);
+}
+
+
+@media screen and (max-width:480px){
+    .main{
+   
+        width: inherit;
+        height: auto;
+        position: absolute;
+          top: 23em;
+          left: 0rem;
+    }
+    
+}
+
+/* cityGuide container started */
+.cityGuide{
+  
+    width: 45vw;
+    height: 140vh;
+
+    margin: 2rem 0rem 2rem 2rem;
+    padding: 2rem 2rem 2rem 2rem;
+}
+@media screen and (max-width:480px){
+    .cityGuide{
+        height: 50vh;
+      
+       margin: 1rem 0rem 1rem 0rem;
+       padding: 0rem 0rem 0rem 0rem;
+   }
+   .cityGuide .heading{
+    width: 100%;
+    height: 10vh;
+   
+        }
+   .cityGuide .heading p{
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.5em;
+
+       }
+       .cityGuide .heading span label{
+        display: block;
+        color: white;
+        font-family: sans-serif;
+      
+    }
+    .cityGuide .heading span input{
+        width: 5rem;
+        height: 1.5rem;
+    }
+    .cityGuide .image1 img {
+        width: 100%;
+        height: 10vh;
+        margin-top: 3rem;
+        opacity: 1;
+        border-radius: 2rem;
+    }
+    .cityGuide .grid-image{
+        display: grid;
+        grid-template-columns: 15vw 15vw;
+        grid-template-rows: 10vh 10vh ;
+       
+        margin: 2rem 0rem 3rem 0rem;
+       
+    }
+    .grid-image .img1{
+        width: 18vw;
+        height: auto;
+    }
+    .grid-image .img2{
+        width: 18vw;
+        height: auto;
+    }
+    .grid-image .img3{
+        width: 18vw;
+        height: auto;
+    }
+    .grid-image .img4{
+        width: 18vw;
+        height: auto;
+    }
+
+}
+.heading{
+    width:42vw;
+    height: 20vh;
+    background-color: var(--danger);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.heading p{
+    color: white;
+    font-family: sans-serif;
+
+}
+.heading span label{
+    display: block;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.heading span input{
+    width: 13rem;
+    height: 3.5rem;
+}
+.image1 img {
+    width:42vw;
+    height: 40vh;
+    margin-top: 3rem;
+    opacity: 1;
+    border-radius: 2rem;
+}
+.grid-image{
+    display: grid;
+    grid-template-columns: 21vw 21vw;
+    grid-template-rows: 30vh 30vh  ;
+    gap: 1rem;
+    row-gap: 3rem;
+    margin: 2rem 0rem 3rem 0rem;
+   
+}
+.img1{
+    width: 20vw;
+    height: 30vh;
+    
+    background-image: url(../img/basir.jpeg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+}
+.img2{
+    width: 20vw;
+    height: 30vh;
+   
+    background-image: url(../img/sami.jpeg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+
+}
+.img3{
+    width: 20vw;
+    height: 30vh;
+    
+    background-image: url(../img/haqmal.jpeg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+
+}
+.img4{
+    width: 20vw;
+    height: 30vh;
+    background-image: url(../img/khan.jpeg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+
+}
+/* aside container started */
+.aside {
+    width: 35%;
+    height: 160vh;
+    
+    margin: 2rem;
+    background-color: var(--add);
+}
+@media screen and (max-width: 480px) {
+    .aside{
+        width: 40%;
+        height: 55vh;
+        background-color:var(--secondary);
+    }
+    .aside .head1{
+        color: var(--light);
+        font-size: 1em;
+        padding: 2rem 0rem 0rem 2rem;
+    }
+
+    .aside .list li{
+        font-size: 0.5rem;
+    } 
+    .aside button{
+        font-size: 0.5rem;
+        font-weight: bold;
+        width: 30vw;
+        height: 3vh;
+        color: var(--light);
+        background-color: var(--danger);
+        margin: 2rem 1rem 2rem 1.5rem ;
+        cursor: pointer;
+    
+    }
+  }
+
+/* asside container started */
+.head1{
+    color: var(--light);
+    font-size: 2rem;
+    padding: 2rem 0rem 0rem 2rem;
+}
+.list{
+    list-style-position: outside;
+    color: var(--light);
+    padding: 2rem 2rem 0rem 2rem;
+   
+}
+.aside li{
+    margin-top:1rem;
+}
+button{
+    font-size: 1rem;
+    font-weight: bold;
+    width: 20vw;
+    height: 10vh;
+    color: var(--light);
+    background-color: var(--danger);
+    margin: 2rem 1.5rem 2rem 2rem ;
+    cursor: pointer;
+
+}
+/* footer style started */
+footer{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(3, 78, 163);
+    position: absolute;
+    top: 75rem;
+}
+@media screen and (max-width: 480px) {
+    footer{
+        width: 100%;
+        height: auto;
+        background-color: rgb(3, 78, 163);
+        position: absolute;
+        top: 55rem;
+    }
+    
+}
+.all-footer-information{
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.all-footer-information h5{
+    color: white;
+}
+.all-footer-information p{
+    color: white;
+    font-size: 10px;
+}
+.all-footer-information a{
+    color: rgb(131, 173, 207);
+    text-decoration: none;
+
+}
+.all-footer-information a:hover{
+    color: var(--warning);
+    font-size: 1.01em;
+}
+.all-footer-information button{
+    background-color: red;
+    width: 180px;
+    height: 30px;
+    position: relative;
+    left: 40px;
+    border: none;
+    outline: none;
+    color: white;
+}
+.all-footer-information span a i{
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin: 0.2rem;
+}
+.img1{
+    transition: all 1s ease-in;
+}
+
+.img1:hover{
+    transform: scale(1.1);
+}
+.img2{
+    transition: all 1s ease-in;
+}
+
+.img2:hover{
+    transform: scale(1.1);
+}
+.img3{
+    transition: all 1s ease-in;
+}
+
+.img3:hover{
+    transform: scale(1.1);
+}
+.img4{
+    transition: all 1s ease-in;
+}
+
+.img4:hover{
+    transform: scale(1.1);
+}

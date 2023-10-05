@@ -1,0 +1,569 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+#hidden{
+    display: none;
+} 
+.contaner-first{
+    width: 100%;
+    height: auto;
+}
+.header-1{
+    
+    width: inherit;
+    height:4em;
+    background-color: var(  --secondary);
+
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.8em;
+}
+.header span label{
+    color: white;
+    text-transform: uppercase;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    bottom:0.2em;
+}
+nav{
+    width: inherit;
+    height: 3em;
+    background-color: var(--first-color--light);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav img{
+    width: auto;
+    height: 8vh;
+   }
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 27em;
+    
+}
+nav ul li a{
+    color: gray;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bolder;
+    
+}
+section{
+    width: inherit;
+    height: 25em;
+    background-color: rgb(31, 151, 231);
+}
+section:hover{
+    background-color:var( --dark);
+}
+section h1{
+    position: absolute;
+    left: 8.5em;
+    bottom:7em;
+    color: white;
+    line-height: 2.5em;
+}
+section .img{
+
+    background-image: url(../img/7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 2.5em;
+    left:39em;
+    width:25em;
+    height: 15em;
+    border-radius: 1.5em;
+}
+
+section .img:hover{
+    animation-name: buzzz;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    transform-origin: 50% 0;
+}
+@keyframes buzzz{
+    0%{transform: translate(0px)}
+    30%{transform: translate(-360px)}
+    60%{transform: translate(360px)}
+}
+.flight{
+    width: 44em;
+    height: 7em;
+    background-color: var( --secondary);
+    position: absolute;
+    top: 6em;
+    left: 13em;
+    border-radius: 1.5em;
+    
+}
+@media screen and (max-width:480px){
+
+    nav img{
+        width: auto;
+        height: 3vh;
+       }
+    .flight{
+        width: 80%;
+        position: absolute;
+        left: 3.5em;
+        top: 5.6em;
+        height: 5em;
+    }
+    .flight p{
+        font-size: 10px;
+    }
+    .flight span{
+        display: block;
+        width: 10%;
+    }
+    section .flight  span label{
+        position: relative;
+        top:0.5em;
+        font-size: 10px;
+        left: -6em;
+    }
+    .flight span select{
+        display: inline-block;
+        width: 100%;
+    }
+    section .flight span #FROM{
+        width: 10em;
+        height: 2em;
+        position: absolute;
+        left: 1em;
+        top: 3em;
+    }
+    section .flight span #TO{
+        width: 10em;
+        height: 2em;
+        position: absolute;
+        left: 15em;
+        top: 3em;
+    }
+    
+    .flight #b{
+        width: 10%;
+    }
+    section h1{
+        position: absolute;
+        left: 2em;
+        font-size:1em;
+        top: 20em;
+    }
+    section .img{
+        position: absolute;
+        left: 15em;
+        width: 15em;
+        height: 10em;
+        top: 18em;
+    }
+    .header-1{
+    
+        width: inherit;
+        height:3em;
+        background-color: var(  --secondary);
+        position: relative;
+        bottom: 0.5em;
+    
+    }
+    nav ul li a{
+        color: gray;
+        text-decoration: none;
+        font-family: sans-serif; 
+        font-weight: 10px;
+        font-size: 10px;
+        padding: 1px;
+        width: 10px;  
+    }  
+    nav ul{
+        width: 20em;
+    }
+
+
+}
+.flight:hover{
+    background-color: rgb(255, 0, 119);
+}
+
+.flight p{
+    position: absolute;
+    left: 1.2em;
+    top: 0.5em;
+    text-transform: uppercase;
+    color: white
+    
+}
+.flight-1{
+    display: flex;
+    justify-content: space-around;
+}
+.flight-1 select{
+    width: 20em;
+    height: 3em;
+    border-radius: 1em;
+}
+.flight-1 label{
+    color: white;
+}
+
+.container{
+    width: inherit;
+    height: 18em;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    background: rgb(207, 243, 236);
+   
+}
+.container .A{
+    background-image: url(../img/6.jpg);
+    width:12.5em;
+    height: 16em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: gray;
+    transition: all 1s ease-in;
+    color: red;
+    border-radius: 0.8em;
+    text-align: center;
+  
+
+}
+.container .B{
+    background-image: url(../img/7.jpg);
+    width:12.5em;
+    height: 16em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s ease-in;
+    color: red;
+    border-radius: 0.8em;
+    text-align: center;
+    
+}
+.container .C{
+    background-image: url(../img/8.jpg);
+    width:12.5em;
+    height: 16em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s ease-in;
+    color: red;
+    border-radius: 0.8em;
+    text-align: center;
+}
+
+.container .D{
+    background-image: url(../img/9.jpg);
+    width:12.5em;
+    height: 16em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 1s ease-in;
+    color: red;
+    border-radius: 0.8em;
+    text-align: center;
+    
+    
+}
+.container .A:hover{
+    transform: scale(1.1);
+    background-color: var(--dark);
+    color:var(--light);
+}
+.container .B:hover{
+    transform: scale(1.1);
+    background-color: var(--dark);
+    color:var(--light);
+}
+.container .C:hover{
+    transform: scale(1.1);
+    background-color: var(--dark);
+    color:var(--light);
+}
+.container .D:hover{
+    transform: scale(1.1);
+    background-color: var(--dark);
+    color:var(--light);
+}
+
+
+ /* city container */
+.container-city{
+    width: inherit;
+    height: 25em;
+    background-color:var(--pic);
+}
+.container-city h4{
+    position: absolute;
+    left: 10em;
+    top: 55.8em;
+    color: white;
+}
+.container-city div{
+    display: flex;
+    justify-content: space-around;
+    margin: 2.8em;
+
+
+}
+.container-city div select{
+    width: 20em;
+    height: 2.8em;
+    border-radius: 0.5em;
+    outline: none;
+    border: none;
+    position: relative; 
+    top: 0.2em;
+}
+
+.container-city div span button{
+      width: 11em;
+      height: 2.9em;
+      margin: -0.9em;
+      outline: none;
+      border: none;
+      background-color:var(--dark);
+      color: white;
+      border-radius: 0.5em;
+      font-family: sans-serif;
+      text-transform: uppercase;
+      position: relative;
+      top: 0.9em;
+      left: 2.7em;
+    
+}
+.container-city div span button:hover{
+    background-color: darkgoldenrod;
+}
+.container-city img{
+    position: relative;
+    left: -1.10em;
+    width: 30em;
+    height: 15em;
+    border-radius: 0.8em;
+ 
+}
+
+@media screen and (max-width:480px){
+    .container-city #selecting{
+        width: 30%;
+        position: relative;
+        left: -3em;
+    }
+    .container-city #btnInformation button{
+        position: relative;
+        width: 25%;
+        font-size: 7px;
+        left: 10px;
+        padding: 1em;
+        bottom: 10px;
+    }
+    .container-city .City_Kabul #photo2{
+        width: 15em;
+        height: 16em;
+
+    }
+    .container-city .City_Kabul .InfoOfCity{
+        font-size:0.6em;
+    }
+    .container-city .City_Herat .SecondImage{
+        width: 30em;
+        height: 16em;
+
+    }
+    .container-city .City_Herat p{
+        font-size:0.6em;
+
+    }
+    .container-city .City_Mazar .SecondImage{
+        width: 30em;
+        height: 28em;
+    }
+    .container-city .City_Mazar{
+        font-size:0.6em;
+
+    }
+    .container-city .City_Ningarhar .SecondImage{
+        width: 40em;
+        height: 28em;
+    }
+    .container-city .City_Ningarhar{
+        font-size:0.6em;
+    }
+
+}
+
+.information{
+    display: flex;
+    justify-content:space-around;
+    width: inherit;
+    height: 18em;
+    background-color:var( --mac);
+   
+}
+.information .car{
+  
+    display: flex;
+    width: 12em;
+    height: 12em;
+    border: 1px solid blue;
+    position: relative;
+    top: 1.8em;
+    text-align: center;
+   
+}
+.information .car:hover{
+    border: 2px solid red;
+}
+.information .small-car{
+    display: grid;
+    grid-template-columns: 9em 9em 9em ;
+    grid-template-rows: 6em 6em;
+    text-align: center;
+    grid-gap: 0.8em 0.8em;
+    position: relative;
+    top: 1.8em;
+}
+@media screen and (max-width:480px){
+    .information{
+        height: 22em;
+    }
+    .information .small-car{
+        display: grid;
+        grid-template-columns: 8em 8em ;
+        grid-template-rows: 6em 6em 6em;
+        text-align: center;
+        grid-gap: 0.8em 0.8em;
+
+    }
+    .information .car{
+        height: 19.5em;
+    }
+}
+.information .small-car .item1{
+ 
+    outline: none;
+    border: 1px solid green
+    
+}
+.information .small-car .item2{
+
+    outline: none;
+    border: 1px solid green
+}
+.information .small-car .item3{
+   
+    outline: none;
+    border: 1px solid green
+}
+.information .small-car .item4{
+ 
+    outline: none;
+    border: 1px solid green
+}
+.information .small-car .item5{
+ 
+    outline: none;
+    border: 1px solid green
+}
+.information .small-car .item6{
+  
+    outline: none;
+    border: 1px solid green
+}
+
+.information .small-car .item1:hover{
+    border: 2px solid red;
+}
+.information .small-car .item2:hover{
+    border: 2px solid red;
+}
+.information .small-car .item3:hover{
+    border: 2px solid red;
+}
+.information .small-car .item4:hover{
+    border: 2px solid red;
+}
+.information .small-car .item5:hover{
+    border: 2px solid red;
+}
+.information .small-car .item6:hover{
+    border: 2px solid red;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(3, 78, 163);
+}
+@media screen and (max-width:480px){
+    footer{
+        width: 100%;
+        height: 80vh;
+        background-color: rgb(3, 78, 163);
+    }
+    .all-footer-information #btn{
+        width: 30vw;
+        height: 5vh;
+    }
+}
+.all-footer-information{
+    position: relative;
+    top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+}
+.all-footer-information h5{
+    color:var(--light);
+    margin: 0.2rem;
+}
+.all-footer-information p{
+    color: white;
+    font-size: 10px;
+}
+.all-footer-information a{
+    color: rgb(131, 173, 207);
+    text-decoration: none;
+    margin: 1rem;
+}
+.all-footer-information a:hover{
+    color:var(--warning);
+    font-size: 1.01em;
+}
+.all-footer-information button{
+    background-color: var(--danger);
+    width: 15vw;
+    height: 8vh;
+    border: none;
+    outline: none;
+    color: white;
+}
+.all-footer-information span a i{
+    color: white;
+    font-size: 2rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin: 0.2rem;
+}

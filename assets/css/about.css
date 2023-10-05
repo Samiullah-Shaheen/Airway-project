@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Heebo:wght@100;400;500;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.main-container-for-body {
+    width: 100%;
+    height: auto;
+}
+/* heder section is started */
+
+.header-1{
+    
+    width: inherit;
+    height:10vh;
+    background-color: var(  --secondary);
+   
+}
+#LUN{
+   width: 3em;
+   height: 2rem;
+   border: none;
+   font-size: 1rem;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+.header span label{
+    color: white;
+    text-transform: uppercase;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+@media screen and (max-width: 480px){
+    .header-1 {
+        height: 5vh;
+    } 
+}
+@media screen and (max-width: 780px){
+    .header-1 {
+        height: 7vh;
+    } 
+}
+
+
+
+/* navbar section is started */
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 1rem; */
+    color: var(--dark);
+    height: 4rem;
+}
+
+nav img{
+    width: auto;
+    height: 10vh;
+   }
+@media screen and (max-width: 480px)
+{
+    nav img{
+        width: auto;
+        height: 3vh;
+       }
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li a{
+    display: inline-block;
+    color: var(--dark);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+nav ul li a:hover{
+    cursor: pointer;
+    color: var(--warning);
+    text-decoration: underline;
+}
+
+/* slider class */
+.container{
+    width: inherit;
+    height: 70vh;
+   
+
+}
+
+
+.slider{
+    background-image: url(../img/4.jpeg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: inherit;
+    height: 70vh; 
+    
+
+}
+
+
+
+
+
+.slider-content-body{
+    background-color: rgba(30, 55,153, 0.7);
+    width: inherit;
+    height: 70vh;
+    display: grid;
+    align-items: center;
+}
+
+h1{
+    color: var(--light);
+    margin-bottom: 1rem;
+     margin-left: 0.7em;
+    
+}
+
+
+.slider-hader{
+   
+    position: absolute;
+    left: 13rem;
+    bottom: 13em;
+   
+}
+@media screen and (max-width: 480px){
+    .slider-hader{
+   
+        position: absolute;
+        left: 5rem;
+        bottom: 35em;
+      
+    }
+
+    
+}
+
+
+.slider-hader ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+    
+   
+
+}
+.slider-hader ul li a{
+    color: var(--mac);
+    text-decoration: none;
+    margin: 0.5em;
+
+}
+.slider-hader ul li a:hover{
+    color: var(--warning);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* main contanier started */
+.main{
+   
+    width: 75vw;
+    height: 223vh;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left: 5rem;
+    top: 23em;
+    background-color: var( --light);
+}
+@media screen and (max-width:480px){
+    .main{
+   
+        width: inherit;
+        height: auto;
+        
+        position: absolute;
+          top: 23em;
+          left: 0rem;
+        
+    }
+    
+}
+
+
+.text{
+  
+     width: 45vw;
+     height: 220vh;
+    margin: 2rem 0rem 2rem 0rem;
+    padding: 2rem 2rem 2rem 2rem;
+}
+@media screen and (max-width:480px){
+    .text{
+        height: 115vh;
+       margin: 1rem 0rem 1rem 0rem;
+       padding: 0rem 0rem 0rem 0rem;
+   }
+   .text .image {
+    width: 100%;
+    height: 20vw;
+    margin: 0em 0em 0.5em 0em;
+    padding: 0em;
+
+      }
+
+   .text h2 {
+    font-size: 1em;
+   }
+   .text .icon {
+    position: absolute;
+    left: 11.3rem;
+    font-size: 0.7rem;
+          }
+
+   .text .icon{
+      transition: all 1s ease-in;
+    }
+   .text h2 ul li {
+    font-size: 0.5em;
+    margin: 0.5rem 1rem 0rem 0rem;
+   }
+   .text .immage {
+
+    width: 100%;
+    height: 20vw;
+    margin: 0em 0em 0.5em 0em;
+    padding: 0em;
+
+   }
+  
+    
+   }
+
+.text ul li {
+    
+    margin: 1rem 2rem 0rem 0rem;
+    list-style-type: none;
+
+}
+.icon {
+    position: absolute;
+    left: 26rem;
+    font-size: 1.5rem;
+}
+.icon{
+    
+    transition: all 1s ease-in;
+}
+
+.icon i:hover {
+    transform: scale(1.7);
+   
+}
+
+.image {
+
+    background-image: url(../img/4.jpeg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    width: 42vw;
+    height: 33vh;
+    margin-bottom: 2rem;
+    opacity: 1;
+}
+
+.immage{
+    background-image: url(../img/33.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30vw;
+    height: 33vh;
+    opacity: 1;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+   
+
+}
+/* aside class is started */
+.aside {
+    margin: 2rem 0rem 0rem 0rem;
+    background-color: var(--add);
+  
+}
+
+
+
+/* asside container started */
+
+.aside{
+    width: 35%;
+    height: 200vh;
+    background-color:var(--secondary);
+   
+}
+@media screen and (max-width: 480px) {
+    .aside{
+        width: 40%;
+        height: 68vh;
+        background-color:var(--secondary);
+    }
+    .aside .head1{
+        color: var(--light);
+        font-size: 1em;
+        padding: 1rem 0rem 0rem 1rem;
+    }
+
+    .aside .list li{
+        font-size: 0.5rem;
+    } 
+    .aside button{
+        font-size: 0.5rem;
+        font-weight: bold;
+        width: 30vw;
+        height: 3vh;
+        color: var(--light);
+        background-color: var(--danger);
+        margin: 2rem 0rem 2rem 1rem ;
+        cursor: pointer;
+    
+    }
+  }
+
+
+.head1{
+    color: var(--light);
+    font-size: 2rem;
+    padding: 2rem 0rem 0rem 2rem;
+}
+.list{
+    list-style-position: outside;
+    color: var(--light);
+    padding: 2rem 2rem 0rem 2rem;
+   
+}
+.aside li{
+    margin-top:1rem;
+}
+button{
+    font-size: 1rem;
+    font-weight: bold;
+    width: 23vw;
+    height: 10vh;
+    color: var(--light);
+    background-color: var(--danger);
+    margin: 2rem 0rem 2rem 1rem ;
+    cursor: pointer;
+
+}
+
+.table-passenger table {
+    width: 40vw;
+    height: 70vh;
+    margin-top: 1rem;
+    
+    border-collapse: collapse;
+} 
+@media screen and (max-width:480px) {
+    .table-passenger table {
+        width: 90vw;
+        height: 33vh;
+       
+    } 
+    .table-passenger table td:nth-child(odd) {
+        font-size: 2rem;
+        background-color: var(--ex-light-gray);
+    
+    }
+    .table-passenger table td:nth-child(even) {
+        font-size: 2rem;
+        background-color:var(--light);
+    
+    }
+
+    
+}
+
+.table-passenger table td:nth-child(odd) {
+    font-size: 0.7rem;
+    background-color: var(--ex-light-gray);
+
+}
+.table-passenger table td:nth-child(even) {
+    font-size: 1rem;
+    background-color:var(--light);
+
+}
+
+/* footer style started */
+footer{
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(3, 78, 163);
+    position: absolute;
+    top: 110rem;
+    
+}
+@media screen and (max-width: 480px) {
+    footer{
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(3, 78, 163);
+        position: absolute;
+        top: 125rem;
+      
+    }
+    
+}
+
+
+.all-footer-information{
+    position: relative;
+    top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.all-footer-information h5{
+    color: white;
+}
+.all-footer-information p{
+    color: white;
+    font-size: 10px;
+}
+.all-footer-information a{
+    color: rgb(131, 173, 207);
+    text-decoration: none;
+    margin: 1rem;
+}.all-footer-information a:hover{
+    color:var(--warning);
+    font-size: 1.01em;
+}
+
+.all-footer-information button{
+    background-color: red;
+    width: 180px;
+    height: 30px;
+    position: relative;
+    left: 40px;
+    border: none;
+    outline: none;
+    color: white;
+}
+.all-footer-information span a i{
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin: 0.2rem;
+}
+
+
+
+
+
+

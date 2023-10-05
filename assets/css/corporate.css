@@ -1,0 +1,605 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap');
+/* navbar-section */
+
+:root{
+    --no-decoretion:none;
+    --no-style-type:none;
+    --noborder:none;
+}
+.main-contianer{
+    width: 100%;
+    height: auto;
+ 
+}
+
+.header-1{
+    
+    width: inherit;
+    height:10vh;
+    background-color: var(  --secondary);
+}
+
+#LUN{
+   width: 3em;
+   height: 2rem;
+   border: var(--noborder);
+   font-size: 1rem;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+}
+.header span label{
+    color: white;
+    text-transform: uppercase;
+}
+.header a{
+    color: white;
+    text-decoration: var(--no-decoretion);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.navbar-section{
+     width: inherit;
+     height: 13vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around ;
+    align-items: center;
+    /* padding: 1rem; */
+}
+.navbar-section  img{
+    width: auto;
+    height: 10vh;
+}
+
+.navbar-section ul{
+    display: flex;
+    list-style-type: var(--no-style-type);
+}
+.navbar-section .nav-item ul li a{
+    display: inline-block;
+    color: var(--dark);
+    text-decoration: var(--no-decoretion);
+    padding: 0.5rem 0.5rem;
+    padding-left:1em ;
+    
+
+}
+.navbar-section .nav-item ul li a:hover{
+    cursor: pointer;
+    color: var(--warning);
+    text-decoration: underline;
+}
+.social-links a{
+    font-size: 1rem;
+    color: var(--light);
+    text-decoration: var(--no-decoretion);
+ 
+    border-radius: 50%;
+    padding: 0.4rem 0rem 0.3rem 0.6rem;
+ 
+    background-color: var(--dark);
+    text-align: center;
+   
+}
+.first-social-links:hover i{
+       
+    animation-name: myIcon;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+    transform-origin: 50% 0;
+
+}
+@keyframes myIcon{
+    0%{transform: rotateY(0deg)}
+    10%{transform: rotateY(-80deg)}
+    20%{transform: rotateY(120deg)}
+    
+    
+}
+.social-links a :hover{
+    cursor: pointer;
+    color: var(--warning);
+    
+}
+
+
+
+/* slaider part is started here */
+.slaider{
+ 
+    background-image: url(../img/12.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:scroll;
+    width: inherit;
+    height: 80vh;
+    
+}
+
+.slaider-content-body{
+
+    background-color:rgba(30, 55, 153,0.8) ;
+    width: inherit;
+    height: 80vh;
+    display: grid;
+    align-items: center;
+}
+h1{
+    color: var(--light);
+    padding-left: 8rem;
+}
+
+.slaider-header ul{
+    list-style-type: var(--no-style-type);
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    margin: 0.5rem 0rem 0rem  7rem;
+}
+.slaider-header ul li a{
+    color: var(--mac);
+    text-decoration: var(--no-decoretion);
+
+}
+.slaider-header ul li a:hover{
+cursor: pointer;
+color: var(--warning);
+text-decoration: underline;
+}
+
+@media screen and (max-width:480px){
+    .main-contianer .navbar-section{
+        height:15vh ;
+       }
+       .navbar-section  img{
+        width: auto;
+        height: 3vh;
+    }
+    .slaider{
+        width: 100%;
+      
+        background-size: cover;
+       }
+   .slaider-header h1{
+    position: absolute;
+    left: -3rem;
+        font-size:30px ;
+        color: var(--danger);
+        margin: -2rem; 
+    }
+    .slaider-header {
+        width: 70%;
+    }
+    .slaider-header ul li{
+        padding-right: 2rem;
+  
+    }
+    .slaider-header ul li a{
+        font-style: 5px;
+        margin-right: 2rem;
+    }
+
+
+}
+
+
+
+/* this the main contianer part  */
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+    height: 230vh;
+    position: absolute;
+    top: 30rem;
+    left:3rem;
+    padding: 1rem 1rem;
+    background-color: var(--light);
+    margin: 0rem auto;
+} 
+
+ .left-section{
+    width: 46vw;
+    height: 225vh;
+}
+.section-img{
+    width: 45vw;
+    height: 47vh;
+    background-image: url(../img/fe3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.text-social{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.he2{
+    display: inline;
+    width: 60%;
+   margin:2rem 3rem 0rem -2rem;
+}
+.left-section-social-links{
+    margin: 2rem -3rem 1rem 0rem;
+    
+
+}
+.section-social-links a{
+    display: inline;
+    color: var(--dark);
+    text-decoration: var(--no-decoretion);
+    font-size: 1.5rem;
+}
+.section-social-links a :hover{
+    cursor: pointer;
+    color: var(--warning);
+    }
+    .pra1{
+        padding: 0rem 1rem 1rem 1rem;
+    }
+    .pra2{
+        padding: 0rem 1rem 1rem 1rem;
+
+    }
+    .imgs-collection{
+        display: grid;
+        grid-template-columns: 23vw 23vw;
+        grid-template-rows: 30vh 30vh 30vh 30vh; 
+        gap: 1rem;
+        column-gap: 0rem;
+        width: 45vw;
+        height: 130vh;
+        padding: 0rem 0rem 0rem 0.5rem;
+    }
+    .div1{
+        width: 21vw;
+        height: 30vh;
+    }
+    .div2{
+        width: 21vw;
+        height: 30vh;
+    }
+    .div3{
+        width: 21vw;
+        height: 30vh;
+
+    }
+    .div4{
+        width: 21vw;
+        height: 30vh;
+    }
+    .div5{
+        width: 21vw;
+        height: 30vh;
+
+    }
+    .div6{
+        width: 21vw;
+        height: 30vh;
+      
+    }
+    .div7{
+        width: 21vw;
+        height: 30vh;
+    }
+    .div8{
+        width: 21vw;
+        height: 30vh;
+    } 
+
+     /* enternal-div part */
+
+    .div1-enternal{
+        width: 21vw;
+        height: 25vh;
+        list-style-type: var(--no-style-type);
+        background-image: url(../img/fe6.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .div2-enternal{
+        width: 21vw;
+        height: 25vh;
+        list-style-type: var(--no-style-type);
+        background-image: url(../img/fe4.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .div3-enternal{
+        width: 21vw;
+        height: 25vh;
+        list-style-type: var(--no-style-type);
+        background-image: url(../img/fe7.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .div4-enternal{
+        width: 21vw;
+        height: 25vh;
+        list-style-type:var(--no-style-type);
+        background-image: url(../img/emp1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .div5-enternal{
+        width: 21vw;
+        height: 25vh;
+        list-style-type: var(--no-style-type);
+        background-image: url(../img/fe9.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .div6-enternal{
+        width: 21vw;
+        height: 25vh;
+        list-style-type: var(--no-style-type);
+        background-image: url(../img/fer.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .div7-enternal{
+        width: 21vw;
+        height: 25vh;
+        list-style-type: var(--no-style-type);
+        background-image: url(../img/fe5.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .div8-enternal{
+        width: 21vw;
+        height: 25vh;
+        list-style-type:var(--no-style-type);
+        background-image: url(../img/fe6.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .imgs-collection a {
+    text-decoration: var(--no-decoretion);
+    color: var(--black);
+ 
+    }
+    .imgs-collection a:hover{
+        color: var(--dark);
+        cursor: pointer;
+        width: 21vw;
+        height: 25vhvh;
+
+    }
+    .imgs-collection a h2{
+        margin: 0.5rem;
+
+    }
+
+@media screen and (max-width:480px){
+    .container{
+        width: 100%;
+        position: absolute;
+        left: 0rem;
+        padding: 0px;
+        padding-top: 5px;
+        height: 195vh;
+        }
+   .section-img{
+    width: 100%;
+    height: 25vh;
+   }
+   .text-social h2{
+    font-size: 15px;
+    color: var(--dark);
+    margin: 10px;
+   }
+
+   .left-section{
+    height: 170vh;
+    margin: 10px;
+   }
+
+   .left-section p{
+    font-size: 15px;
+   
+   }
+   .section-social-links a{
+    position: relative;
+    right: 15px;
+    display: inline;
+    padding: 0px;
+    font-size: 20px;
+   }
+   .imgs-collection{
+    display: grid;
+    grid-template-rows: 15vh 15vh 15vh 15vh;
+    height: 70vh;
+   }
+   .imgs-collection h2{
+    font-size: 15px;
+   }
+   .imgs-collection .div1 a .div1-enternal{
+    width: 100%;
+    height: 10vh;
+   }
+   .imgs-collection .div2 a .div2-enternal{
+    width: 100%;
+    height: 10vh;
+   }
+   .imgs-collection .div3 a .div3-enternal{
+    width: 100%;
+    height: 10vh;
+   }
+   .imgs-collection .div4 a .div4-enternal{
+    width: 100%;
+    height: 10vh;
+   }
+   .imgs-collection .div5 a .div5-enternal{
+    width: 100%;
+    height: 10vh;
+   }
+   .imgs-collection .div6 a .div6-enternal{
+    width: 100%;
+    height: 10vh;
+   }
+   .imgs-collection .div7 a .div7-enternal{
+    width: 100%;
+    height: 10vh;
+   }
+   .imgs-collection .div8 a .div8-enternal{
+    width: 100%;
+    height: 10vh;
+   }
+ 
+}
+
+
+/* right-section is started here  */
+
+.right-section{
+    width: 35%;
+    height: 130vh;
+    background-color:var(--secondary);
+}
+.right-section #head1{
+    color: var(--light);
+    font-size: 2rem;
+    padding: 2rem 0rem 0rem 2rem;
+}
+.right-section .list{
+    list-style-position: outside;
+    color: var(--light);
+    padding: 2rem;
+   
+}
+.right-section li{
+    margin-top:2rem;
+}
+.right-section #btn{
+    font-size: 1rem;
+    font-weight: bold;
+    width: 25vw;
+    height: 10vh;
+    color: var(--light);
+    background-color: var(--danger);
+    margin: 2rem 0rem 2rem 1rem ;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width:480px){
+   
+    .right-section{
+        margin-top: 10px;
+        height:120vh ;
+    }
+    .right-section #head1{
+        font-size: 15px;
+        padding:  45px 0px 0px 15px;
+        
+    }
+    .right-section li{
+        font-size: 12px;
+        margin-top: 40px;
+    }
+    .right-section .list{
+        padding: 10px;
+    }
+    .right-section #btn{
+        font-size: 15px;
+        height: 6vh;
+        margin-top: 60px;
+    }
+
+}
+ 
+  /* footer  is started here*/
+ .footer-section{
+    position: absolute;
+    top: 113rem;
+    width: inherit;
+    height: 90vh;
+    background-color: rgb(3, 78, 163);
+}
+.footer-section h5{
+    padding-top: 1rem;
+}
+.all-footer-information{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.all-footer-information h5{
+    color:var(--light);
+    margin: 0.2rem;
+}
+.all-footer-information p{
+    color: white;
+    font-size: 10px;
+}
+.all-footer-information a{
+
+    color: rgb(131, 173, 207);
+    text-decoration: var(--no-decoretion);
+    margin: 1rem;
+}
+.all-footer-information a:hover{
+    color: var(--warning);
+    font-size: 1.01em;
+}
+.all-footer-information #btnn{
+    background-color: var(--danger);
+    width: 15vw;
+    height: 8vh;
+    border:var(--noborder);
+    outline: none;
+    color: var(--light);
+}
+
+.all-footer-information span a i{
+    color:var(--light);
+    font-size: 2rem;
+    border: 1px solid var(--light);
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin: 0.2rem;
+}
+@media screen and (max-width:480px){
+    .footer-section{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 40px;
+        height: auto;
+     
+    }
+    .all-footer-information{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .all-footer-information #btnn{
+        font-size: 10px;
+        height: 3vh;
+        width: auto;
+        padding: 0em 2em;
+     
+    }
+    .all-footer-information a{
+        font-size: 12px;
+        margin: 0px;
+    }
+    .footer-section h5{
+        padding: 5px;
+    }
+
+
+}
+           /* footer */
